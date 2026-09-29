@@ -1,0 +1,35 @@
+Kode ini mendemonstrasikan cara kerja struktur data Array dan perulangan (looping) Do-While di dalam PHP. Tujuannya adalah untuk menampilkan daftar nama hewan yang disimpan di dalam satu variabel secara berurutan.
+
+Variabel yang Digunakan
+Pada skrip ini, terdapat dua variabel utama:
+
+$hewan = ['buaya', 'anjing', 'babi', 'cicak', 'domba'];
+Ini adalah sebuah Array. Array berfungsi untuk menyimpan banyak nilai (dalam hal ini, teks/string nama-nama hewan) di dalam satu variabel saja. Setiap nilai di dalam array memiliki nomor urut yang disebut index, yang selalu dimulai dari angka 0.
+
+Index 0: 'buaya'
+
+Index 1: 'anjing'
+
+dan seterusnya hingga index 4 ('domba').
+
+$i = 0;
+Variabel ini bertindak sebagai counter atau penghitung yang akan digunakan untuk mengakses index array. Nilai awalnya diset menjadi 0 agar sesuai dengan index pertama dari array $hewan.
+
+Alur Logika Program (do-while)
+Perulangan do-while memiliki keunikan: ia akan mengeksekusi blok kode di dalam do minimal satu kali terlebih dahulu, baru kemudian mengecek kondisi di blok while.
+
+Blok do:
+
+echo $hewan[$i] ."<br>";: Program mencetak elemen array pada index ke-$i. Pada putaran pertama ($i adalah 0), yang dicetak adalah "buaya". Tag "<br>" ditambahkan agar teks selanjutnya berpindah ke baris baru (enter).
+
+$i++;: Ini adalah perintah increment. Nilai variabel $i ditambah 1. (Dari 0 menjadi 1, dari 1 menjadi 2, dst).
+
+Kondisi while:
+
+while($i < count($hewan)): Fungsi count($hewan) bertugas menghitung total elemen yang ada di dalam array $hewan (jumlahnya ada 5 elemen).
+
+Program mengecek: "Apakah nilai $i saat ini lebih kecil dari 5?".
+
+Jika Ya (true), program akan kembali ke atas dan menjalankan blok do lagi.
+
+Jika Tidak (false), perulangan berhenti. Ini terjadi saat $i mencapai angka 5, sehingga mencegah program memanggil index yang tidak ada di dalam array (index ke-5 tidak ada karena array hanya sampai index 4).
