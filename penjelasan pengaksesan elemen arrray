@@ -1,0 +1,25 @@
+Kode ini merupakan skrip PHP dasar yang mendemonstrasikan cara membuat variabel, mendefinisikan array satu dimensi, dan menggunakan perulangan foreach untuk menampilkan seluruh isi array tersebut ke dalam halaman HTML.
+
+Bagian-Bagian Kode
+1. Komentar Multi-baris (Metadata)
+Di bagian paling atas (sebelum tag HTML), terdapat blok komentar:
+
+PHP
+/* Nama : Yesi Sijabat
+   NIM  : 433250031
+   prodi: Teknologi Komputer
+*/
+Komentar yang diapit oleh /* dan */ tidak akan dieksekusi oleh program maupun ditampilkan di browser. Ini umumnya digunakan untuk memberikan informasi metadata mengenai siapa penulis atau pembuat kode tersebut.
+
+2. Deklarasi dan Pemanggilan Variabel
+$nama = "Multi Dimensi Array";: Program membuat variabel bernama $nama dan mengisinya dengan tipe data teks (string).
+
+echo "Selamat datang di $nama <br>";: Perintah echo digunakan untuk mencetak teks ke layar. PHP secara otomatis dapat membaca isi variabel $nama meskipun berada di dalam tanda kutip ganda (ini disebut string interpolation). Tag <br> digunakan untuk membuat garis baru (enter) pada HTML.
+
+3. Array Satu Dimensi
+$mahasiswa = ['Thalia', 'Daniel', 'Rico', 'Cindy', 'Barney'];: Variabel $mahasiswa diinisialisasi sebagai sebuah Array. Berbeda dengan variabel biasa yang hanya menyimpan satu nilai, array ini menyimpan 5 nama sekaligus dalam bentuk daftar urut (dimulai dari index 0).
+
+4. Perulangan foreach
+foreach ($mahasiswa as $x): foreach adalah perulangan khusus di PHP yang dirancang untuk menangani array. Cara kerjanya sangat sederhana: program akan mengambil array $mahasiswa, lalu pada setiap putarannya, nilai elemen saat ini akan disimpan sementara ke dalam variabel $x.
+
+echo $x . "<br>";: Mencetak nilai $x (nama mahasiswa pada putaran tersebut) diikuti dengan tag ganti baris <br>. Tanda titik (.) digunakan untuk menyambung string/variabel dengan tag HTML.
