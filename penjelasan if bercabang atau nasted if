@@ -1,0 +1,25 @@
+Kode ini merupakan skrip PHP dasar yang disematkan ke dalam struktur dokumen HTML. Tujuannya adalah untuk mendemonstrasikan penggunaan logika percabangan kondisional (if, else if, dan else) dalam menentukan kemampuan membeli barang berdasarkan perbandingan jumlah uang dan harga barang.
+
+Variabel yang Digunakan
+Kode ini menginisialisasi tiga variabel numerik di awal skrip:
+
+$uang_programmer = 1000;: Representasi jumlah uang yang dimiliki oleh programmer.
+
+$laptop_gaming = 2000;: Representasi harga satu unit laptop gaming.
+
+$uang_koperasi = 4000;: Representasi jumlah uang kas yang dimiliki oleh koperasi.
+
+Alur Logika Program
+Program mengeksekusi pengecekan kondisi secara berurutan dari atas ke bawah:
+
+Pengecekan Pertama (if):
+Program mengecek apakah uang programmer lebih besar dari harga laptop gaming (1000 > 2000). Karena kondisi ini salah (false), program melewati blok kode ini dan tidak mencetak apapun.
+
+Pengecekan Kedua (else if):
+Program beralih mengecek apakah uang koperasi lebih besar dari harga laptop gaming (4000 > 2000). Karena kondisi ini benar (true), program akan mencetak teks: sanggup dibeli oleh kope..rasi.
+
+Pengecekan Bersarang/Nested If (if di dalam else if):
+Setelah blok koperasi terpenuhi, terdapat logika tambahan di dalamnya untuk mengecek apakah uang koperasi cukup atau sama dengan harga 2 unit laptop (4000 >= 2000 * 2). Karena hasilnya adalah 4000 >= 4000 (benar), program akan mencetak teks tambahan: laptop yang sanggup terbeli ada du..a.
+
+Pengecekan Terakhir (else):
+Blok ini merupakan alternatif terakhir jika uang programmer maupun uang koperasi tidak mencukupi untuk membeli laptop (kondisi pertama dan kedua bernilai false). Karena kondisi kedua sudah terpenuhi, blok ini sepenuhnya diabaikan.
