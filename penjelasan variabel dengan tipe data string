@@ -1,0 +1,22 @@
+Penjelasan Kode PHP: Variabel dan Penggabungan String (Concatenation)
+Kode ini merupakan contoh dasar bagaimana mendeklarasikan variabel bertipe teks (string) di PHP dan cara menggabungkan beberapa teks atau variabel tersebut menjadi satu kalimat utuh. Proses penggabungan teks ini dalam pemrograman disebut sebagai Concatenation.
+
+Bagian-Bagian Kode
+1. Deklarasi Variabel
+Kode ini mendefinisikan dua buah variabel yang masing-masing menyimpan kalimat (string):
+
+$nama = "belajar PABI";: Variabel pertama.
+
+$nama2 = "sambil mendengar lagu";: Variabel kedua.
+
+2. Mencetak dan Menggabungkan Teks (Concatenation)
+Di dalam PHP, kita menggunakan simbol titik (.) untuk menyambungkan dua buah string atau variabel.
+
+echo $nama . "<br>";
+Program hanya mencetak isi variabel $nama ("belajar PABI") lalu disambung dengan tag <br> agar baris selanjutnya tercetak di bawahnya (enter).
+
+echo $nama . " " . $nama2 . "<br>";
+Di sini terjadi penggabungan tiga elemen: variabel $nama, sebuah spasi kosong " ", dan variabel $nama2. Jika spasi " " tidak ditambahkan, teks dari kedua variabel akan menempel tanpa jeda ("belajar PABIsambil mendengar lagu").
+
+echo $nama ." ". " untuk " . $nama2;
+Pada baris ini, selain menggabungkan dua variabel, program juga menyisipkan kata tambahan (string statis) yaitu " untuk " di antara variabel $nama dan $nama2.
