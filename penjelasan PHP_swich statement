@@ -1,0 +1,19 @@
+Kode ini merupakan contoh dasar penerapan struktur kontrol logika switch di dalam PHP. Fungsi utama switch adalah untuk menggantikan penggunaan if...elseif...else yang panjang ketika kita ingin mencocokkan satu variabel dengan banyak kemungkinan nilai secara spesifik.
+
+Variabel yang Digunakan
+Pada awal skrip PHP, terdapat deklarasi satu variabel:
+
+$nama = 'Moses';: Variabel ini menyimpan data bertipe string (teks) yang berisi nama "Moses". Variabel inilah yang akan menjadi kunci penentu dalam pencocokan logika di bawahnya.
+
+Alur Logika Program (switch)
+Pernyataan switch($nama) akan mengambil nilai dari variabel $nama (yaitu 'Moses') dan membandingkannya dengan setiap nilai yang ada di dalam blok case secara berurutan:
+
+case 'Rivaldo': Program mengecek apakah "Moses" sama dengan "Rivaldo". Karena tidak sama, blok ini dilewati.
+
+case 'Sotar dodo': Program mengecek apakah "Moses" sama dengan "Sotar dodo". Karena tidak sama, blok ini juga dilewati.
+
+case 'Moses': Program mengecek apakah "Moses" sama dengan "Moses". Karena cocok (benar), program akan mengeksekusi perintah di dalam blok ini, yaitu mencetak teks: kondisi terpenuhi, namaku Moses.
+
+Perintah break;: Ini adalah bagian yang sangat penting. Setelah blok 'Moses' dieksekusi, perintah break akan menghentikan seluruh proses pengecekan switch. Jika tidak ada break, program akan terus mengeksekusi blok di bawahnya meskipun kondisinya sudah tidak relevan (fall-through).
+
+default:: Blok ini berfungsi sebagai alternatif terakhir jika tidak ada satu pun nilai case yang cocok dengan variabel $nama. Karena kondisi sudah terpenuhi di case 'Moses', blok default ini tidak akan dijalankan.
