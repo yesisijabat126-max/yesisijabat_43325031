@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP itu Mudah</title>
+</head>
+
+<body>
+
+<?php
+$nama = 'Moses';
+
+switch($nama)
+{
+    case 'Rivaldo':
+        echo 'kondisi terpenuhi, namaku Rivaldo';
+        break;
+
+    case 'Sotar dodo':
+        echo 'kondisi terpenuhi, namaku Sotar dodo';
+        break;
+
+    case 'Moses':
+        echo 'kondisi terpenuhi, namaku Moses';
+        break;
+
+    case 'Arta Hutapea':
+        echo 'kondisi terpenuhi, namaku Arta Hutapea';
+        break;
+
+    default:
+        echo 'tidak ada pilihan yang benar';
+}
+?>
+
+</body>
+</html>
